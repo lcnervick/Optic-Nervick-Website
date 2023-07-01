@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+      }
+
+      li {
+        list-style-position: inside;
+      }
+
+      section {
+        width: 90%;
+        margin: 40px auto;
+        padding: 20px;
+        border: 2px solid #333;
+      }
+
+      h1, h2, h3 {
+        margin:10px 0px;
+      }
+
+
+      /*  COLOR STYLES  */
+
+      .color-selections {
+        width: 100%;
+      }
+      .color-selections ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .color-selections li {
+        flex: 1 1 auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        max-width: 25%;
+          width: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid black;
+      }
+      .color-selections li+li {
+        margin-left:40px;
+      }
+
+      .yellow {
+        background-color:hsl(61, 100%, 85%);
+      }
+
+      .lightgray {
+        background-color:hsl(0, 0%, 91%);
+      }
+
+      .beige {
+        background-color:hsl(60, 13%, 82%);
+      }
+
+      .purple {
+        background-color: hsl(315, 46%, 25%);
+		color: hsl(0, 0%, 91%);
+      }
+
+      .skyblue {
+        background-color:hsl(197, 70%, 70%);
+      }
+
+      /*  FONTS  */
+
+      .font-styles {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+      }
+
+      .font-styles div {
+        flex: 1 1 auto;
+        line-height: 1.4;
+        min-width: 33%;
+        margin:30px 20px;
+      }
+      .font-styles h3 {
+        text-decoration: underline;
+      }
+
+      .font-normal {
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      .font-bold {
+        font-style: normal;
+        font-weight: bold;
+      }
+
+      .font-italic {
+        font-style: italic;
+        font-weight: normal;
+      }
+
+      .ubuntu {
+        font-family: 'Ubuntu', sans-serif;
+      }
+      .work-sans {
+        font-family: 'Work Sans', sans-serif;
+      }
+      .raleway {
+        font-family: 'Raleway', sans-serif;
+      }
+
+
+      /*  TEXT STYLES  */
+      .text-styles > div { 
+        margin:20px 30px;
+      }
+
+      .text-styles h1 {
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'Ubuntu';
+      }
+
+      .text-styles h2 {
+        font-weight: 500;
+        font-size: 26px;
+        font-family: Raleway;
+      }
+
+      .text-styles h3 {
+        font-weight: 500;
+        font-size: 24px;
+        font-family: Raleway;
+      }
+
+      .text-styles p {
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Work Sans';
+      }
+      
+    </style>
+	</head>
+	<body>
+		<header>
+			<h1>My Website Design System Template</h1>
+		</header>
+		<main>
+			<section>
+				<h2>Colors</h2>
+				<div class="color-selections">
+					<ul>
+						<li class="purple">Deep Purple</li>
+						<li class="yellow">Yellow</li>
+						<li class="skyblue">Sky-Blue</li>
+						<li class="lightgray">Light Gray</li>
+						<li class="beige">Beige</li>
+					</ul>
+				</div>
+			</section>
+
+			<section>
+				<h2>Fonts</h2>
+				<div class="font-styles">
+					<div class="font-style ubuntu">
+						<h3>Ubuntu</h3>
+						<p class="font-normal">The quick brown fox jumps over the lazy dog.</p>
+						<p class="font-bold">The quick brown fox jumps over the lazy dog.</p>
+						<p class="font-italic">The quick brown fox jumps over the lazy dog.</p>
+					</div>
+					<div class="font-style raleway">
+						<h3>Raleway</h3>
+						<p class="font-normal">The quick brown fox jumps over the lazy dog.</p>
+						<p class="font-bold">The quick brown fox jumps over the lazy dog.</p>
+						<p class="font-italic">The quick brown fox jumps over the lazy dog.</p>
+					</div>
+					<div class="font-style work-sans">
+						<h3>Work Sans</h3>
+						<p class="font-normal">The quick brown fox jumps over the lazy dog.</p>
+						<p class="font-bold">The quick brown fox jumps over the lazy dog.</p>
+						<p class="font-italic">The quick brown fox jumps over the lazy dog.</p>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2>Text Styles</h2>
+				<div class="text-styles">
+					<div>
+						<h1>H1: Heading 1</h1>
+						<ul>
+							<li>font-weight: 700</li>
+							<li>font-size: 30px</li>
+							<li>font-family: 'Ubuntu'</li>
+						</ul>
+					</div>
+					<div>
+						<h2>H2: Heading 2</h2>
+						<ul>
+							<li>font-weight: 500</li>
+							<li>font-size: 26px</li>
+							<li>font-family: 'Raleway'</li>
+						</ul>
+					</div>
+					<div>
+						<h3>H3: Heading 3</h3>
+						<ul>
+							<li>font-weight: 500</li>
+							<li>font-size: 24px</li>
+							<li>font-family: 'Raleway'</li>
+						</ul>
+					</div>
+					<div>
+						<p>P: Paragraph</p>
+						<ul>
+							<li>font-weight: 400</li>
+							<li>font-size: 18px</li>
+							<li>font-family: 'Work Sans'</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+
+		</footer>
+	</body>
+</html>
